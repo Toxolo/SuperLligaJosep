@@ -21,8 +21,8 @@ public class algoritmeversioJosep {
         }
         else if (EquipBlau < EquipRoig){
             Diferencia = (EquipRoig - EquipBlau)/1000;
-            int blau = posibilita+Diferencia;
-            int roig = posibilita-Diferencia;
+            int blau = posibilita-Diferencia;
+            int roig = posibilita+Diferencia;
             System.out.println("El equip blau te un "+ (blau)+"%");
             System.out.println("El equip roig te un "+ (roig)+"%");
             guanyador( blau, roig);
