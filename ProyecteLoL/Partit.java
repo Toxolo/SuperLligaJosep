@@ -2,12 +2,67 @@ import java.util.Date;
 import java.util.Random;
 
 public class Partit {
-    int id;
-    Equip oroequipBlau;
-    Equip equipRoig;
-    Equip winner;
-    Date hora;
-    Jugador mvp;
+    private int id;
+    private Equip equipBlau;
+    private Equip equipRoig;
+    private Equip guanyador;
+    private Date hora;
+    private Jugador mvp;
+
+    public Partit(int id, Equip equipBlau, Equip equipRoig, Date hora) {
+        this.id = id;
+        this.equipBlau = equipBlau;
+        this.equipRoig = equipRoig;
+        this.hora = hora;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Equip getEquipBlau() {
+        return equipBlau;
+    }
+
+    public void setEquipBlau(Equip equipBlau) {
+        this.equipBlau = equipBlau;
+    }
+
+    public Equip getEquipRoig() {
+        return equipRoig;
+    }
+
+    public void setEquipRoig(Equip equipRoig) {
+        this.equipRoig = equipRoig;
+    }
+
+    public Equip getGuanyador() {
+        return guanyador;
+    }
+
+    public void setGuanyador(Equip guanyador) {
+        this.guanyador = guanyador;
+    }
+
+    public Date getHora() {
+        return hora;
+    }
+
+    public void setHora(Date hora) {
+        this.hora = hora;
+    }
+
+    public Jugador getMvp() {
+        return mvp;
+    }
+
+    public void setMvp(Jugador mvp) {
+        this.mvp = mvp;
+    }
     public static void main(String[] args) {
         int min = 40000;  // Límite inferior
         int max = 90000;  // Límite superior        
